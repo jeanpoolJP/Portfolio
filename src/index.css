@@ -1,0 +1,88 @@
+:root {
+  --main-blue: #004aad;
+  --dark-bg: #1a1a1a;
+}
+
+.navbar {
+  background-color: var(--dark-bg);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+section#about {
+  scroll-margin-top: 80px;
+}
+
+/* Imagen más pequeña, sin fondo ni bordes */
+.about-image {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Efecto suave al pasar el mouse */
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+/* Tarjeta de habilidad */
+.skill-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--main-blue);
+  box-shadow: 0 0 15px rgba(0, 74, 173, 0.5);
+}
+
+/* Íconos */
+.skill-icon {
+  font-size: 2.5rem;
+  color: var(--main-blue);
+  transition: transform 0.4s ease, color 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+  transform: scale(1.2) rotate(5deg);
+  color: #ffffff;
+}
+
+/* Espaciado */
+#skills {
+  scroll-margin-top: 80px;
+}
+
+/* Estilos adicionales para el footer */
+footer {
+  background-color: var(--dark-bg);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Efectos hover mejorados para los íconos */
+.social-icon {
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  footer .container {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+    margin: 1rem 0;
+  }
+}
