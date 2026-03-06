@@ -25,7 +25,7 @@ export default function Hero() {
         </a>
 
         <a
-          href="/cv-jeanpool.pdf"
+          href="cv-jeanpool.pdf"
           download="JeanPool-CV.pdf"
           className="btn btn-lg"
           style={{

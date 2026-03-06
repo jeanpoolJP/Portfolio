@@ -16,10 +16,10 @@ export default function Projects() {
       link: "https://github.com/jeanpoolJP/jpmarket-js",
     },
     {
-      title: "JP Store - Sistema de Registro de Ventas ",
-      desc: "Sistema web de registro y gestión de ventas desarrollado con Laravel, MySQL y Docker. Permite registrar ventas, administrar productos, clientes y generar reportes. Incluye roles de usuario (Administrador y Vendedor) y emisión de comprobantes en PDF.",
+      title: "JP Store - Sistema POS de Ventas ",
+      desc: "Sistema web de registro y gestión de ventas desarrollado con JavaScript full stack utilizando Node.js, Express y MongoDB. Permite registrar ventas, administrar productos, clientes y generar reportes en tiempo real. Incluye autenticación de usuarios con roles (Administrador y Vendedor).",
       img: "project-03.png",
-      link: "https://github.com/jeanpoolJP/jp-store",
+      link: "https://github.com/jeanpoolJP/sistema-ventas.git",
     },
   ];
 

@@ -1,19 +1,26 @@
-// Path: src/components/Skills.jsx
-
 export default function Skills() {
   const skills = [
+    // Frontend moderno
+    { name: "React", icon: "fa-brands fa-react" },
+    { name: "JavaScript", icon: "fa-brands fa-js" },
     { name: "HTML", icon: "fa-brands fa-html5" },
     { name: "CSS", icon: "fa-brands fa-css3-alt" },
-    { name: "JavaScript", icon: "fa-brands fa-js" },
-    { name: "PHP", icon: "fa-brands fa-php" },
+    { name: "Bootstrap", icon: "fa-brands fa-bootstrap" },
+
+    // Backend
+    { name: "Node.js", icon: "fa-brands fa-node-js" },
     { name: "Laravel", icon: "fa-brands fa-laravel" },
+
+    // Bases de datos
     { name: "MySQL", icon: "fa-solid fa-database" },
     { name: "MongoDB", icon: "fa-solid fa-leaf" },
+
+    // Herramientas y control de versiones
     { name: "Git", icon: "fa-brands fa-git-alt" },
-    { name: "Bootstrap", icon: "fa-brands fa-bootstrap" },
     { name: "Docker", icon: "fa-brands fa-docker" },
+
+    // Lenguajes adicionales y diseño
     { name: "Python", icon: "fa-brands fa-python" },
-    { name: "Node.js", icon: "fa-brands fa-node-js" },
   ];
 
   return (
