@@ -25,25 +25,30 @@ export default function About() {
           {/* Texto */}
           <div className="col-md-6 ps-md-5" data-aos="fade-left">
             <p className="lead mb-4">
-              Soy estudiante de <strong>Desarrollo de Software</strong> en{" "}
-              <strong>SENATI</strong>, apasionado por la tecnología, la
-              innovación y el aprendizaje constante. Cuento con sólidos
-              conocimientos en <strong>programación</strong>,{" "}
-              <strong>bases de datos</strong>, <strong>desarrollo web</strong> y{" "}
-              <strong>computación</strong>.
+              Soy <strong>egresado de Desarrollo de Software</strong>, con
+              formación en desarrollo de aplicaciones web, programación, bases
+              de datos y desarrollo de soluciones tecnológicas. Me caracteriza
+              el interés por crear software funcional, escalable y con buenas
+              prácticas de desarrollo.
             </p>
 
             <p className="lead mb-4">
-              Poseo un nivel <strong>intermedio de inglés</strong> y actualmente
-              llevo <strong>1 año de prácticas profesionales</strong>, donde he
-              fortalecido mis habilidades técnicas y mi capacidad para trabajar
-              en equipo dentro de entornos reales de desarrollo.
+              Cuento con{" "}
+              <strong>1 año de experiencia en prácticas profesionales</strong>,
+              donde participé en el desarrollo y mantenimiento de aplicaciones,
+              fortaleciendo mis habilidades técnicas, la resolución de problemas
+              y el trabajo colaborativo dentro de equipos de desarrollo. Además,
+              poseo un <strong>nivel intermedio de inglés</strong>, que me
+              permite comprender documentación técnica y continuar aprendiendo
+              nuevas tecnologías.
             </p>
 
             <p className="lead">
-              Mi objetivo es seguir creciendo como profesional, aportando mis
-              conocimientos, compromiso y pasión por la tecnología al desarrollo
-              de proyectos innovadores y de alto impacto.
+              Mi objetivo es desarrollarme como{" "}
+              <strong>Desarrollador de Software</strong>, aportando soluciones
+              innovadoras, aprendiendo constantemente y contribuyendo al éxito
+              de cada proyecto mediante el compromiso, la responsabilidad y la
+              mejora continua.
             </p>
 
             <a

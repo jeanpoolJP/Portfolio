@@ -1,5 +1,5 @@
 // Path: src/components/Projects.jsx
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Projects() {
   const projects = [
@@ -10,10 +10,11 @@ export default function Projects() {
       link: "https://github.com/jeanpoolJP/jptech",
     },
     {
-      title: "JP Market - E-commerce con Full JS",
-      desc: "E-commerce full stack desarrollado con React, Node.js, Express y MongoDB. Permite gestionar productos, usuarios y órdenes, con autenticación, carrito de compras y panel de administrador. Proyecto completamente construido con JavaScript moderno (frontend y backend).",
+      title: "Sistema Web Institucional - Colegio Harry Sullivan",
+      desc: "Aplicación web desarrollada para la gestión del sitio institucional del Colegio Harry Sullivan. Incluye un panel administrativo para actualizar el contenido del sitio de forma dinámica. Desarrollada con Next.js, TypeScript, Tailwind CSS, shadcn/ui y MongoDB Atlas, utilizando una arquitectura modular y por capas.",
       img: "project-02.png",
-      link: "https://github.com/jeanpoolJP/jpmarket-js",
+      github: "https://github.com/jeanpoolJP/colegio-harry-sullivan",
+      demo: "https://colegio-harry-sullivan.vercel.app/",
     },
     {
       title: "JP Store - Sistema POS de Ventas ",
@@ -70,22 +71,51 @@ export default function Projects() {
                   </div>
 
                   <div className="mt-3">
-                    <a
-                      href={p.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn w-100 text-white fw-semibold d-flex align-items-center justify-content-center gap-2"
-                      style={{
-                        backgroundColor: "var(--main-blue)",
-                        border: "none",
-                        transition: "all 0.3s ease",
-                      }}
-                      onMouseOver={(e) => (e.target.style.opacity = "0.85")}
-                      onMouseOut={(e) => (e.target.style.opacity = "1")}
-                    >
-                      <FaGithub size={20} />
-                      Ver en GitHub
-                    </a>
+                    <div className="d-flex gap-2">
+                      <a
+                        href={p.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`btn text-white fw-semibold d-flex align-items-center justify-content-center gap-2 ${
+                          p.demo ? "flex-fill" : "w-100"
+                        }`}
+                        style={{
+                          backgroundColor: "var(--main-blue)",
+                          border: "none",
+                          transition: "all 0.3s ease",
+                        }}
+                        onMouseOver={(e) =>
+                          (e.currentTarget.style.opacity = "0.85")
+                        }
+                        onMouseOut={(e) =>
+                          (e.currentTarget.style.opacity = "1")
+                        }
+                      >
+                        <FaGithub size={20} />
+                        GitHub
+                      </a>
+
+                      {p.demo && (
+                        <a
+                          href={p.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn btn-outline-light fw-semibold d-flex align-items-center justify-content-center gap-2 flex-fill"
+                          style={{
+                            transition: "all 0.3s ease",
+                          }}
+                          onMouseOver={(e) =>
+                            (e.currentTarget.style.opacity = "0.85")
+                          }
+                          onMouseOut={(e) =>
+                            (e.currentTarget.style.opacity = "1")
+                          }
+                        >
+                          <FaExternalLinkAlt size={16} />
+                          Demo
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>

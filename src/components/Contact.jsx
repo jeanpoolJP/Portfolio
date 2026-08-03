@@ -13,7 +13,7 @@ export default function Contact() {
         "service_jeanpool",
         "template_7asphsu",
         form.current,
-        "eOeVXMTwjkqnNAuOZ"
+        "eOeVXMTwjkqnNAuOZ",
       )
       .then(
         () => {
@@ -23,7 +23,7 @@ export default function Contact() {
         (error) => {
           alert("❌ Ocurrió un error al enviar el mensaje.");
           console.log(error);
-        }
+        },
       );
   };
 
